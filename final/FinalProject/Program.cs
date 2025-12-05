@@ -4,6 +4,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello FinalProject World!");
+        MenuUI menu = new MenuUI();
+        menu.ShowMenu();
     }
 }
