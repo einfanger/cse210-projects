@@ -1,11 +1,12 @@
+using System;
+
 public class InstructionStep
 {
     public int StepNumber { get; set; }
-    public string Text { get; set; }
+    public string Description { get; set; }
 
-    public InstructionStep(int number, string text)
+    public override string ToString()
     {
-        StepNumber = number;
-        Text = text;
+        return $"Step {StepNumber}: {Description}";
     }
 }

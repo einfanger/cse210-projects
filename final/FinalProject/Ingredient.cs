@@ -1,13 +1,12 @@
+using System;
+
 public class Ingredient
 {
     public string Name { get; set; }
-    public double Amount { get; set; }
-    public string Unit { get; set; }
+    public string Amount { get; set; }
 
-    public Ingredient(string name, double amount, string unit)
+    public override string ToString()
     {
-        Name = name;
-        Amount = amount;
-        Unit = unit;
+        return $"{Amount} {Name}";
     }
 }
