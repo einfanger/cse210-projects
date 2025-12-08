@@ -3,9 +3,9 @@ public class InstructionStep
     public int StepNumber { get; set; }
     public string Text { get; set; }
 
-    public InstructionStep(int stepNumber, string text)
+    public InstructionStep(int number, string text)
     {
-        StepNumber = stepNumber;
+        StepNumber = number;
         Text = text;
     }
 }
